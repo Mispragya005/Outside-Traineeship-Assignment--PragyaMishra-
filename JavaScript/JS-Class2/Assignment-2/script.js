@@ -1,0 +1,40 @@
+const course = ["JS"];
+addCourse("PHP");
+addCourse("Shopify");
+undo();
+featuredCourse("Git");
+removeFeaturedCourse();
+addCourse("Wordpress");
+replaceCourse();
+sortCourse();
+
+function addCourse(item){
+    course.push(item);
+}
+
+function undo(){
+    course.pop();
+}
+function featuredCourse (item){
+    course.unshift(item);
+}
+function removeFeaturedCourse (item){
+    course.shift();
+}
+function replaceCourse(){
+    course.splice(0,1, "JavaScript")
+}
+function sortCourse(){
+    const courseSorted = course.sort((a,b)=> a.localeCompare(b))
+    console.log(courseSorted);
+}
+// console.log("Courses", course.slice[0,1]);
+console.log("Courses", course);
+
+class Person{
+    greet(){
+        console.log("Hello, I am Pragya");
+    }
+}
+const person1= new Person()
+person1.greet();

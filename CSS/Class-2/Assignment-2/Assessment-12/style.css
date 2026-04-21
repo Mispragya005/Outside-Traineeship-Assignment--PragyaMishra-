@@ -1,0 +1,167 @@
+:root {
+    --font: 'Open Sans', sans-serif;
+    --blue:      #7DD0ED;
+    --blue-dark: #27A6D2;
+    --white:     #ffffff;
+    --page-bg:   #E9EDEF;
+    --text:      #5F5F5F;
+    --muted:     #9A9A9A;
+    --track-bg:  #E9EDEF;
+    --radius: 12px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font);
+    background: var(--page-bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 900px;
+}
+.plans {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+.card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    flex: 1;
+    max-width: 260px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+.head {
+    background: var(--blue);
+    padding: 0.75rem 1rem;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.card:hover .head {
+    background: var(--blue-dark);
+}
+.head h2 {
+    color: var(--white);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+.body {
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1;
+}
+.body h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #444;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+    transition: 0.3s ease;
+}
+.card:hover .body h3 {
+    color: var(--blue-dark);
+}
+.body p {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+}
+.body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.body ul li {
+    font-size: 0.78rem;
+    color: var(--text);
+    line-height: 1.5;
+}
+.details {
+    width: 100%;
+    max-width: 860px;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.75rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #444;
+}
+.track {
+    width: 100%;
+    height: 12px;
+    background: var(--track-bg);
+    border-radius: 999px;
+    overflow: hidden;
+}
+.bar {
+    height: 100%;
+    width: 0%;
+    background: var(--blue);
+    border-radius: 999px;
+    transition: width 0.5s ease;
+}
+.container:has(.basic:hover) .users  {
+     width: 10%; 
+}
+.container:has(.basic:hover) .storage  { 
+    width: 15%; 
+}
+.container:has(.basic:hover) .projects { 
+    width:  5%;
+ }
+.container:has(.pro:hover) .users    { 
+    width: 42%;
+ }
+.container:has(.pro:hover) .storage  {
+     width: 45%; 
+    }
+.container:has(.pro:hover) .projects {
+     width: 30%; 
+    }
+.container:has(.premium:hover) .users    {
+     width: 90%; 
+    }
+.container:has(.premium:hover) .storage  { 
+    width: 90%;
+ }
+.container:has(.premium:hover) .projects { 
+    width: 90%;
+ }

@@ -1,0 +1,37 @@
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    gap: 20px;
+}
+
+/* Method one:
+same line <div class="box"></div><div class="box"></div>
+*/
+/* Method two:
+    .container{
+        font-size: 0;
+    }
+*/
+/* Method three:
+    .box{
+        margin-right: -20px;
+    }
+*/
+/* Method four:
+    .box{
+        letter-spacing: 20px;
+    }
+*/
+/* Method five:
+    .box{
+        display: flex;
+    }
+*/
+/* Method six:
+    .box{
+        display: grid;
+    } 
+
+*/

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Debug B - Animation Not Triggering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      body {
+        padding: 64px;
+      }
+      .card {
+        width: 200px;
+        height: 100px;
+        padding: 12px;
+        background-color: #3498db;
+        color: white;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+       .card:hover {  /*here is a problem with the selector, it should be .card:hover without the space */
+        transform: scale(1.1);
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">Hover Me</div>
+  </body>
+</html>

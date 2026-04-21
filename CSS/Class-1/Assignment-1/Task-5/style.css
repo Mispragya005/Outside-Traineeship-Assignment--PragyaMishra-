@@ -1,0 +1,23 @@
+*{
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.display{
+    background-color: red;
+}
+.visibility{
+    background-color: blue;
+    visibility: hidden;
+}
+.opacity{
+    background-color: green;
+    opacity: 0;
+    transition: opcity 0.5s ease;
+}
+.opacity:hover{
+    opacity: 1;
+}

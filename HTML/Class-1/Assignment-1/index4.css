@@ -1,0 +1,50 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.header{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.info{
+    text-align: right;
+    gap: 2px;
+    font-size: 15px;
+}
+.about{
+    margin-top: 20px;
+    width: 100%;
+}
+.experience, .msc{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.experience, .mscp{
+    font-size: 12px;
+}
+.experience p{
+    font-size: 12px;
+}
+.dotted{
+    display: inline-block;
+    justify-content: space-between;
+    gap: 20px;
+    width: 30%;
+    border-style: dashed;
+    padding: 20px;
+}
+.dotted span{
+    float: right;
+
+}
+
+

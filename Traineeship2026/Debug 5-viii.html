@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Debug H - The Overflowing Sidebar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      .wrapper {
+        display: flex;
+        width: 100vw;
+      }
+
+      .sidebar {
+        width: 300px;
+        padding: 20px;
+        background: #333;
+        color: white;
+        /* The Bug: Default box-sizing makes this 340px total */
+      }
+
+      .content {
+        flex: 1;
+        padding: 20px;
+        background: #f0f0f0;
+        /* The Bug: Content might overflow if the text is long */
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">Sidebar (300px)</aside>
+      <main class="content">Main Content (The Rest)</main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Floating Label Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .for-reference {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .for-reference img {
+        width: 350px;
+      }
+      hr {
+        margin-bottom: 32px;
+      }
+      .wrapper{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        margin-bottom: 4rem;
+      }
+      form{
+    width:90vw;
+    max-width:768px;
+    border:1px solid #ddd;
+    padding:3vw;
+    display:flex;
+    flex-direction:column;
+    border-radius:5px;
+}
+
+label{
+    margin-bottom:15px;
+    position:relative;
+    border-bottom:1px solid #ddd;
+}
+input{
+    width:100%;
+    padding:10px 0px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+}
+    </style>
+  </head>
+  <body>
+    <figure class="for-reference">
+      <img src="img/focused-input.gif" alt="" />
+      <figcaption>For Reference</figcaption>
+    </figure>
+
+    <hr />
+
+    <main class="wrapper">
+      <form class="form">
+        <!-- Form Group -->
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email Address" required />
+          <label for="email">Email Address</label>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-submit">Subscribe</button>
+      </form>
+    </main>
+  </body>
+</html>

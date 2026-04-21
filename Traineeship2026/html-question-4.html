@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fully responsive layout</title>
+  </head>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f4f4f4;
+  font-size: larger;
+}
+
+.hero div {
+  flex: 1 1 300px; 
+  padding: 80px;
+  width: 70%;
+}
+
+.hero figure {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.features {
+  padding: 50px;
+  background: white;
+  font-size: 18px;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.feature-list article {
+  flex: 1 1 250px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+  </style>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Build Modern Websites</h1>
+          <p>Create scalable and accessible digital experiences.</p>
+          <a href="#">Get Started</a>
+        </div>
+
+        <figure>
+          <img src="img/img-002.webp" alt="Office workspace" />
+        </figure>
+      </section>
+
+      <section class="features">
+        <h2>Our Features</h2>
+
+        <div class="feature-list">
+          <article>
+            <h3>Performance</h3>
+            <p>Fast and optimized solutions.</p>
+          </article>
+
+          <article>
+            <h3>Accessibility</h3>
+            <p>Inclusive design for everyone.</p>
+          </article>
+
+          <article>
+            <h3>Scalability</h3>
+            <p>Future-ready architecture.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index3.css">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h1>HTML Learning</h1>
+
+   <nav>
+    <ul>
+        <li> <a href="#home">Home</a></li>
+        <li> <a href="#about">About Us</a></li>
+        <li> <a href="#support">Support</a></li>
+        <li> <a href="#gallery">Gallery</a></li>
+        <li> <a href="#contact">Contact Us</a></li>
+    </ul>
+   </nav>
+
+   <hr>
+   <h1>HTML Forms</h1>
+
+<hr>
+
+   <h2>Zoo Keeper Application Form</h2>
+   <i>Please complete the form. Mandatory fields are marked with an a <span style="color: red;">*</span></i>
+
+    <form action="#" method="post">
+        <fieldset class="firstForm">
+        <legend> Contact Details </legend>
+        <div class="row">
+            <label for="name">Name <span style="color: red;">*</span></label>
+           <input type="text" id="name" name="name" required> 
+        </div><br>
+        <div class="row">
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" name="telephone"> 
+        </div><br>
+        <div class="row">
+            <label for="email">Email <span style="color: red;">*</span></label>
+           <input type="email" id="email" name="email" required> 
+        </div><br>
+    </fieldset>
+ 
+    <fieldset>
+        <legend> Personal Information </legend>
+
+    <div class="row">
+        <label for="age">Age <span style="color: red;">*</span></label>
+    <input type="text" id="age" name="age" required> 
+    </div> <br>
+
+    <div class="row">
+        <label for="gender">Gender:</label>
+    <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select> 
+    </div><br>
+    <div class="row">
+        <label for="w3review">When did you first know you wanted to become a zoo-keeper?</label>
+    <textarea placeholder="Message"></textarea>
+    </div><br>
+    </fieldset>
+
+    <fieldset>
+        <legend> Pick Your Favorite Animals </legend>
+             <div id="check1">
+            <input type="checkbox" id="zebra" name="choice" value="1">
+           <label for="zebra">Zebra</label>
+           <input type="checkbox" id="cat" name="choice" value="2">
+           <label for="cat">Cat</label>
+          <input type="checkbox" id="anaconda" name="choice" value="3">
+          <label for="anaconda">Anaconda</label>
+         <input type="checkbox" id="human" name="choice" value="4">
+         <label for="human">Human</label>
+        </div>
+
+        <div id="check2">
+            <input type="checkbox" id="elephant" name="choice" value="1">
+           <label for="elephant">Elephant</label>
+           <input type="checkbox" id="wildbeest" name="choice" value="2">
+           <label for="wildbeest">Wildbeest</label>
+          <input type="checkbox" id="pigeon" name="choice" value="3">
+          <label for="pigeon">Pigeon</label>
+         <input type="checkbox" id="crab" name="choice" value="4">
+         <label for="crab">Crab</label>
+        </div>
+       
+    </fieldset>
+
+    <button id="btn">Submit Application</button>
+
+    </form>
+
+    <form action="#" method="post" id="form2">
+         <h3>Personal Details</h3>
+         <div class="row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"> 
+            </div><br>
+            <div class="row">
+                <label for="email">Email</label>
+            <input type="email" id="email" name="email"> 
+            </div> <br>
+            <div class="row"> 
+                <label for="location">Location</label>
+            <input type="text" id="location" name="location"> 
+            </div><br>
+            <div class="row">
+                <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label> 
+            </div><br>
+            <div class="row">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday"> 
+            </div> <br>
+             <div class="row">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+            <option value="selectCountry">Select a Country</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+           </select>
+           </div> <br>
+                <div class="row">
+            <label for="message">Other Information</label>
+            <textarea id="message" name="message" ></textarea> 
+            </div><br>
+                <div class="row" id="news">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">I want to receive newsletters</label>
+            </div> <br>
+            <button class="submit">Submit</button>
+    </form>
+    <hr>
+   
+</body>
+</html>
