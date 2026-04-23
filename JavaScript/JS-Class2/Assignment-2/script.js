@@ -43,7 +43,7 @@ console.log("Courses", course);
  let course = ["PHP", "JS", "HTML", "CSS", "WordPress", "Shopify", "Python", "Ruby", "Laravel", "GoLang"];
  console.log("Before operations: " + course);
 
- course.splice(4, 3, "Java", "C++", "C#", "C", "React");
- console.log("After operations: " + course);
+course.splice(4, 3, "Java", "C++", "C#", "C", "React");
+console.log("After operations: " + course);
 
 
