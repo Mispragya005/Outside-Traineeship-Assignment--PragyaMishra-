@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="toast"></div>
+
+  <div id="modal-overlay">
+    <div id="modal-box">
+      <button id="modal-close">X</button>
+      <h2>Welcome to our<br>List Manager</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>'LIST MANAGER'</h1>
+
+    <p id="item-count">TOTAL ITEMS: 0</p>
+
+    <input type="text" id="search-input" placeholder="Search items..." />
+
+    <div class="add-row">
+      <input type="text" id="add-input" placeholder="ENTER NEW ITEM..." />
+      <button id="add-btn" type="button">ADD ITEM</button>
+    </div>
+
+    <ul id="item-list"></ul>
+
+    <p id="no-results">No results found</p>
+
+    <button id="clear-btn" type="button" disabled>CLEAR ALL ITEMS</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
