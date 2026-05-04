@@ -1,0 +1,14 @@
+:root {
+    --color-bg-card: #ffffff;
+    --color-bg-stats: #F5E8DF;
+    --color-bg-stats-hover: #e8d4c6;
+    --color-text-primary: #7C6957;
+    --color-text-value-hover: #a0623a;
+    --color-border: #7C6957;
+    --color-border-stats: rgba(200, 170, 130, 0.3);
+    --color-shadow: rgba(124, 105, 87, 0.3);
+    --color-btn-hover-bg: #7C6957;
+    --color-btn-hover-text: #ffffff;
+    --color-body-gradient-start: #FBFD94;
+    --color-body-gradient-end: #C8802C;
+}
