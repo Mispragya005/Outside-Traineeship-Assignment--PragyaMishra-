@@ -1,0 +1,28 @@
+:root {
+    --color-bg: #F5F0E8;
+    --color-dark: #1a1a2e;
+    --color-text: #1a1a2e;
+    --color-text-muted: #888;
+    --color-accent: #D4A843;
+    --color-btn-bg: #E8674A;
+    --color-btn-text: #ffffff;
+    --color-sidebar-bg: #1a1a2e;
+    --color-sidebar-text: #ffffff;
+    --color-sidebar-heading: #D4A843;
+    --color-sidebar-border: rgba(255,255,255,0.1);
+    --color-stat-num: #cccccc;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Source Serif 4', serif;
+
+    --spacing-xs: 0.4rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.25rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    --radius-sm: 4px;
+    --radius-btn: 2px;
+
+    --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+}
