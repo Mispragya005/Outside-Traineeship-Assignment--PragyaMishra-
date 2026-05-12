@@ -1,0 +1,12 @@
+@use 'variables' as vars;
+@use 'mixins' as *;
+@use 'utilities'; 
+
+.card {
+  border: 1px solid #ccc;
+  @include responsive-padding(nth(vars.$spacing-scale, 2), nth(vars.$spacing-scale, 4));
+}
+
+.section {
+  @include responsive-padding(nth(vars.$spacing-scale, 3), nth(vars.$spacing-scale, 6));
+}
