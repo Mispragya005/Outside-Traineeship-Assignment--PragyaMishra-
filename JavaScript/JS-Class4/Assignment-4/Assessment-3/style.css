@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(209, 206, 206);
+    padding: 1rem;
+    margin: 10px;
+}
+#boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+#addBoxBtn{
+    padding-block: 0.5rem;
+    background-color: rgb(166, 57, 57);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
