@@ -1,0 +1,20 @@
+.channel-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e5ee;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.channel-card img {
+  max-width: 220px;
+  max-height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.65;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}/*# sourceMappingURL=channel-card.css.map */

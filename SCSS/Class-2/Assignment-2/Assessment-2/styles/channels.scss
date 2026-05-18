@@ -1,0 +1,35 @@
+@use 'variable' as *;
+
+.channels {
+  padding: 80px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: $color-label;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 42px;
+    font-weight: 400;
+    color: $color-title;
+    margin-bottom: 50px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
