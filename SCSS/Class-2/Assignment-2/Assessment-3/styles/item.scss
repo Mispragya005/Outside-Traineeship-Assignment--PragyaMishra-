@@ -1,0 +1,45 @@
+@use 'variable' as *;
+
+.item {
+  border-top: 1px solid $color-border;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border;
+  }
+
+  &__question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    color: $color-text;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    gap: 16px;
+  }
+
+  &__icon {
+    font-size: 20px;
+    color: $color-label;
+    flex-shrink: 0;
+  }
+
+  &__answer {
+    display: none;
+    padding-bottom: 28px;
+
+    p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: $color-answer;
+    }
+  }
+
+  &.open {
+    .item__answer {
+      display: block;
+    }
+  }
+}

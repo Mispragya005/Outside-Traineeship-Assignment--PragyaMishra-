@@ -1,0 +1,27 @@
+.insights {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.insights__title {
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 50px;
+}
+.insights__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+@media (max-width: 900px) {
+  .insights__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.insights__footer {
+  margin-top: 50px;
+  text-align: center;
+}/*# sourceMappingURL=insights.css.map */

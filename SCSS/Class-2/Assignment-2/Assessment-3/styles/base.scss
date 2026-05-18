@@ -1,0 +1,25 @@
+@use 'variable' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $color-bg;
+  color: $color-text;
+  min-height: 100vh;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: $font-main;
+}
+
+a {
+  text-decoration: none;
+}
