@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Part I </title>
+</head>
+<body>
+    <h1>Contact us</h1>
+    <p>(*) Asterisk denotes mandatory fields</p>
+    <form>
+
+    <div class="left-side">
+
+        <div class="row">
+            <div class="field">
+                <label for="name">First name*</label>
+                <input type="text" id="name"  required>
+            </div>
+
+            <div class="field">
+                <label for="last-name">Last name*</label>
+                <input type="text" id="last-name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label for="email">Work email*</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="field">
+                <label for="company">Company*</label>
+                <input type="text" id="company" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label for="job-title">Job title*</label>
+                <input type="text" id="job-title" required>
+            </div>
+
+            <div class="field">
+                <label for="phone">Phone number (optional)</label>
+                <input type="tel" id="phone">
+            </div>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">
+                I agree to the use or processing of my personal information by Persisent Systems for the purpose of fulfilling this request and in accordance with <span>privacy notice</span>
+            </label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="newsletter">
+            <label for="newsletter">
+                Subscribe me to latest blogs and updates.
+            </label>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </div>
+
+    <div class="right">
+   
+        <textarea id="message" placeholder="How can we help you?"></textarea>
+        <label for="message">You can also email us directly at<span>sujit@outside.studio</span></label>
+
+    </div>
+
+</form>
+    <script src="script.js"></script>
+</body>
+</html>

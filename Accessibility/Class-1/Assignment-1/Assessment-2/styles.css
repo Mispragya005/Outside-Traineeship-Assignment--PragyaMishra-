@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    background: white;
+}
+
+.utility {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    font-size: 14px;
+    background-color: rgb(237, 231, 231);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.utility a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.navBar {
+    display: flex;
+    gap: 25px;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:focus {
+    outline: 2px solid orangered;
+}
