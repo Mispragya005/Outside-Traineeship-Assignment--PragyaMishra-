@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #7a8a66; 
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.btn-link .icon-arrow {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn-link:hover .icon-arrow {
+  transform: translate(3px, -3px);
+}
+
+.btn-link .arrow-shaft {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.35s ease;
+}
+
+.btn-link:hover .arrow-shaft {
+  stroke-dashoffset: -2;
+}
+
+.btn-more {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 40px; 
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.btn-more::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #000000;
+  transform: scaleX(0.7); 
+  transform-origin: 0% 100%; 
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn-more:hover::after {
+  transform: scaleX(1);
+}
+
+.btn-more .icon-down {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-more .arrow-shaft {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transform-origin: 50% 50%;
+}
+
+.btn-more .arrow-head {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transform-origin: 50% 100%;
+}
+
+.btn-more:hover .arrow-shaft {
+  transform: translateY(2px) scaleY(1.1);
+}
+
+.btn-more:hover .arrow-head {
+  transform: translateY(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon-arrow, .arrow-shaft, .arrow-head, .btn-more::after {
+    transform: none !important;
+    transition: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}
