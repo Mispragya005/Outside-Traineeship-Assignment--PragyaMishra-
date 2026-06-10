@@ -1,0 +1,23 @@
+@use 'variable' as *;
+
+.channel-card {
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  box-shadow: $shadow-card;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  img {
+    max-width: 220px;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.65;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+  }
+}

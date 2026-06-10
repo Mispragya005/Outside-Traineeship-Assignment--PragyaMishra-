@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Debug A - Absolute Badge Misaligned</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      main {
+        background-color: green;
+        padding: 32px;
+      }
+     .card {
+        background: red;
+        padding: 20px;
+        position: relative; 
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <main>Some content here</main>
+    <div class="card">
+      <div class="badge">Badge</div>
+      <h2>Product</h2>
+    </div>
+  </body>
+</html>

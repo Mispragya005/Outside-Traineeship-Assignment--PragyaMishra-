@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Code</h1>
+<p>Find and fix the bug. This snippet is used to find the average of an array of numbers.</p>
+<script>
+   function calculateAverage(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {  
+        sum += Number(numbers[i]);              
+    }
+    return sum / numbers.length;
+}
+console.log(calculateAverage([10, 20, 30])); // Output: 20
+console.log(calculateAverage(['10', 'abd', 30])); // Output: NaN
+</script>
+
+Check the hard copy for full question.
+</body>
+</html>

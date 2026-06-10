@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #eef1f8;
+  color: black;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.insights {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.insights__title {
+  text-align: center;
+  font-family: "Georgia", serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 50px;
+}
+.insights__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+@media (max-width: 900px) {
+  .insights__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.insights__footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card__image {
+  position: relative;
+  height: 200px;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+.card__tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #ffffff;
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+.card__body {
+  padding: 24px;
+}
+.card__title {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+.card__text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f5c842;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 50px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}/*# sourceMappingURL=main.css.map */

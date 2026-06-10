@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Code</h1>
+<script>
+    function calculateTotal(items) {
+        let total = 0;
+
+        for (let i = 0; i < items.length; i++) {
+            const price = items[i].price;
+            total += items[i].price;
+        }
+
+        return total;
+    }
+
+    const cart = [
+        { name: "Chair", price: 100 },
+        { name: "Table", price: 200 }
+    ];
+
+    console.log(calculateTotal(cart));
+</script>
+Check the hard copy for full question.
+</body>
+</html>

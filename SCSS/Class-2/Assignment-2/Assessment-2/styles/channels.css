@@ -1,0 +1,31 @@
+.channels {
+  padding: 80px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.channels__label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #3dbfaa;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.channels__title {
+  font-family: "Georgia", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #1a1a2e;
+  margin-bottom: 50px;
+}
+.channels__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .channels__grid {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=channels.css.map */

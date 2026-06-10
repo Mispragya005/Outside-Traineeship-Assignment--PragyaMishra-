@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Products List</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+
+			.controls {
+				margin-bottom: 20px;
+				display: flex;
+				gap: 15px;
+				align-items: center;
+			}
+
+			.controls select,
+			.controls button {
+				padding: 8px 12px;
+				font-size: 14px;
+				cursor: pointer;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				background-color: #fff;
+			}
+
+			.controls button:hover {
+				background-color: #f0f0f0;
+			}
+
+			.product-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 20px;
+			}
+
+			.product-card {
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				padding: 15px;
+				background-color: #f9f9f9;
+				box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+			}
+
+			.product-card h3 {
+				margin-top: 0;
+				color: #333;
+			}
+
+			.product-card p {
+				margin: 5px 0;
+				color: #666;
+			}
+
+			.price {
+				font-weight: bold;
+				color: #2c974b;
+				font-size: 1.1em;
+			}
+
+			.sorting-arrow {
+				position: relative;
+				width: 12px;
+				height: 6px;
+			}
+
+			.sorting-arrow::after {
+				content: "";
+				background-image: url("data:image/svg+xml,%3Csvg width='6' height='3' viewBox='0 0 6 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.0351407 2.4885C-0.0117136 2.53535 -0.0117136 2.61133 0.0351407 2.65818C0.081995 2.70503 0.157972 2.70503 0.204826 2.65818L2.57332 0.28969L4.94181 2.65818C4.98866 2.70503 5.06464 2.70503 5.11149 2.65818C5.15835 2.61133 5.15835 2.53535 5.11149 2.4885L2.65909 0.0360956L2.65817 0.0351466C2.6113 -0.0117155 2.53532 -0.0117155 2.48846 0.0351466L0.0351407 2.4885Z' fill='black'/%3E%3C/svg%3E%0A");
+				width: 12px;
+				height: 6px;
+				background-size: 12px 6px;
+				background-repeat: no-repeat;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+      .arrow-down::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+			.btn-sorting {
+				display: flex;
+				align-items: center;
+				column-gap: 6px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Products</h1>
+		<div class="controls">
+			<div>
+				<label for="category-filter">Filter by Category:</label>
+				<select id="category-filter">
+					<option value="All">All Categories</option>
+					<option value="Furniture">Furniture</option>
+					<option value="Electronics">Electronics</option>
+				</select>
+			</div>
+
+			<button class="btn-sorting" id="sort-price-btn">
+				Sort by Price
+				<div class="sorting-arrow arrow-up"></div>
+			</button>
+			<button class="btn-sorting" id="sort-name-btn">
+				Sort by Name
+				<div class="sorting-arrow arrow-down">
+				</div>
+			</button>
+		</div>
+
+		<div id="product-list" class="product-grid"></div>
+
+		<script>
+			const products = [
+				{
+					id: 1,
+					name: "Chair",
+					price: "$120",
+					category: "Furniture",
+					rating: 4.5,
+				},
+				{
+					id: 2,
+					name: "Table",
+					price: "$300",
+					category: "Furniture",
+					rating: 4.2,
+				},
+				{
+					id: 3,
+					name: "Laptop",
+					price: "$1500",
+					category: "Electronics",
+					rating: 4.8,
+				},
+				{
+					id: 4,
+					name: "Mouse",
+					price: "$25",
+					category: "Electronics",
+					rating: 4.1,
+				},
+				{
+					id: 5,
+					name: "Sofa",
+					price: "$800",
+					category: "Furniture",
+					rating: 4.7,
+				},
+			];
+			//option1
+    let currentProducts = [...products];
+
+    function renderProducts() {
+      const list = document.getElementById("product-list");
+      list.innerHTML = "";
+
+      currentProducts.forEach((product) => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+          <h3>${product.name}</h3>
+          <p>Category: ${product.category}</p>
+          <p>Rating: ${product.rating}</p>
+          <p class="price">${product.price}</p>
+        `;
+        list.appendChild(card);
+      });
+    }
+    document.getElementById("category-filter").addEventListener("change", function () {
+      const selectedCategory = this.value;
+      if (selectedCategory === "All") {
+        currentProducts = [...products];
+      } else {
+        currentProducts = products.filter(p => p.category === selectedCategory);
+      }
+      renderProducts();
+    });
+  </script>
+</body>
+</html>
+		</script>
+	</body>
+</html>

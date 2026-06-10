@@ -1,0 +1,8 @@
+@use 'variables' as vars;
+
+@each $space in vars.$spacing-scale {
+  $i: index(vars.$spacing-scale, $space);
+  .m-#{$i} {
+    margin: $space !important;
+  }
+}

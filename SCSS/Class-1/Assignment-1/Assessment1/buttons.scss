@@ -1,0 +1,32 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  border-radius: $btn-border-radius;
+  transition: $btn-transition;
+  cursor: pointer;
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.65;
+    pointer-events: none;
+  }
+
+  @each $size, $values in $btn-sizes {
+
+    &.btn-#{$size} {
+      padding: nth($values, 1);
+      font-size: nth($values, 2);
+    }
+  }
+
+  @each $name, $values in $btn-variants {
+
+    &.btn-#{$name} {
+      @include button-variant($name);
+    }
+  }
+}

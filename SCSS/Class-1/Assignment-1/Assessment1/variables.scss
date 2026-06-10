@@ -1,0 +1,31 @@
+$btn-border-radius: 4px;
+$btn-transition: all 0.2s ease-in-out;
+
+$btn-variants: (
+  "primary": (
+    "bg": #007bff,
+    "color": #fff,
+    "border": #007bff,
+    "hover-bg": darken(#007bff, 10%)
+  ),
+
+  "danger": (
+    "bg": #dc3545,
+    "color": #fff,
+    "border": #dc3545,
+    "hover-bg": darken(#dc3545, 10%)
+  ),
+
+  "ghost": (
+    "bg": transparent,
+    "color": #6c757d,
+    "border": transparent,
+    "hover-bg": rgba(0, 0, 0, 0.05)
+  )
+);
+
+$btn-sizes: (
+  "sm": (0.25rem 0.5rem, 0.875rem),
+  "md": (0.5rem 1rem, 1rem),
+  "lg": (0.75rem 1.5rem, 1.25rem)
+);

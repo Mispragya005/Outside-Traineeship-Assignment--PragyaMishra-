@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Only Multi-Level Dropdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+.menu {
+  list-style: none;
+}
+
+.menu.level-1 {
+  display: flex;
+  justify-content: center;
+  background: black;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  background: #444;
+}
+.menu.level-2,
+.menu.level-3 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: gray;
+  min-width: 180px;
+}
+
+.menu.level-2 .menu-item a,
+.menu.level-3 .menu-item a {
+  color: black;
+  padding: 10px;
+}
+
+.menu.level-2 .menu-item a:hover,
+.menu.level-3 .menu-item a:hover {
+  background: #555;
+}
+.menu-item.has-dropdown:hover > .menu.level-2 {
+  display: block;
+}
+
+.menu.level-2 .menu-item.has-dropdown:hover > .menu.level-3 {
+  display: block;
+  left: 100%; 
+  top: 0;
+}
+    </style>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <ul class="menu level-1">
+          <!-- Home -->
+          <li class="menu-item">
+            <a href="#">Home</a>
+          </li>
+          <!-- Services -->
+          <li class="menu-item has-dropdown">
+            <a href="#">Services</a>
+            <!-- Level 2 -->
+            <ul class="menu level-2">
+              <li class="menu-item">
+                <a href="#">Web Development</a>
+              </li>
+
+              <li class="menu-item has-dropdown">
+                <a href="#">Design</a>
+
+                <!-- Level 3 -->
+                <ul class="menu level-3">
+                  <li class="menu-item">
+                    <a href="#">UI Design</a>
+                  </li>
+
+                  <li class="menu-item">
+                    <a href="#">UX Research</a>
+                  </li>
+
+                  <li class="menu-item">
+                    <a href="#">Brand Identity</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#">SEO</a>
+              </li>
+            </ul>
+          </li>
+          <!-- About -->
+          <li class="menu-item">
+            <a href="#">About</a>
+          </li>
+          <!-- Contact -->
+          <li class="menu-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

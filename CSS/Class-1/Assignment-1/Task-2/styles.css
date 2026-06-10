@@ -1,0 +1,96 @@
+*{
+    margin: 15px;
+    padding: 0;
+    font-size: large;
+
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    "one one one"
+    "four two five"
+    "four three five"
+    "six six six";
+    gap: 10px;
+}
+.one{
+    grid-area: one;
+    background-color: #454545;
+    color: white;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.two{
+    grid-area: two;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 3rem;
+    height: 3rem;
+
+}
+.three{
+    grid-area: three;
+    background-color: gray;
+    color: white;
+    padding-block: 16rem;
+    padding-inline: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.four{
+    grid-area: four;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.five{
+    grid-area: five;
+    background-color: #c9a0dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.six{
+    grid-area: six;
+    background-color: #454545;
+    color: white;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px){
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "one one"
+        "two two"
+        "four three"
+        "six five";
+    }
+}
+@media (max-width: 600px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "five"
+        "four"
+        "six";
+    }
+}
