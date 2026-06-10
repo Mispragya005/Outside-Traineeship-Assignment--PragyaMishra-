@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Switzer:ital,wght@0,600;1,400&display=swap");
+h1, .h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-style: normal;
+}
+
+.h1-italic {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  h1, .h1 {
+    font-size: 34px;
+    line-height: 1;
+  }
+  .h1-italic {
+    font-size: 34px;
+    line-height: 1;
+    font-style: italic;
+  }
+}
+h2, .h2 {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-style: normal;
+}
+
+h3, .h3 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  h2, .h2 {
+    font-size: 24px;
+    line-height: 1.15;
+  }
+  h3, .h3 {
+    font-size: 20px;
+  }
+}
+.h3-italic {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-style: italic;
+}
+
+.special-xl {
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 0.9;
+}
+
+@media (max-width: 768px) {
+  .h3-italic {
+    font-size: 20px;
+    font-style: italic;
+  }
+  .special-xl {
+    font-size: 40px;
+    line-height: 1;
+  }
+}
+.number {
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.intro {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 768px) {
+  .number {
+    font-size: 60px;
+  }
+  .intro {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+body, .body {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.body-semi {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 768px) {
+  body, .body {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .body-semi {
+    font-size: 16px;
+  }
+}
+.body-small {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.body-small-semi {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 768px) {
+  .body-small {
+    font-size: 12px;
+  }
+  .body-small-semi {
+    font-size: 12px;
+  }
+}
+.body-xs {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 768px) {
+  .body-xs {
+    font-size: 10px;
+  }
+}
+.btn-text {
+  font-family: "Interstate-Bold", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mono-tag {
+  font-family: "InterstateMono", monospace;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.color-swatch {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.color-swatch--white {
+  border: 1px solid #000;
+}
+
+.components-header {
+  background-color: #000;
+}
+
+.btn-outline-brand,
+.btn-filled-brand {
+  font-family: "Interstate-Bold", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 12px;
+  padding: 16px 48px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-outline-brand {
+  color: #FF6449;
+  border: 2px solid #FF6449;
+  background-color: transparent;
+}
+.btn-outline-brand:hover {
+  background-color: #FF6449;
+  color: #fff;
+}
+
+.btn-filled-brand {
+  color: #fff;
+  background-color: #FF6449;
+  border: 2px solid #FF6449;
+}
+.btn-filled-brand:hover {
+  background-color: rgb(255, 56.5659340659, 22);
+}
+
+.btn-full-width {
+  width: 100%;
+}
+
+.tag-default,
+.tag-selected {
+  font-family: "Interstate-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 6px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tag-default {
+  color: #000;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
+.tag-selected {
+  color: #FF6449;
+  border: 2px solid #FF6449;
+  background-color: transparent;
+}/*# sourceMappingURL=typography.css.map */
